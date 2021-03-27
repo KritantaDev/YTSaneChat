@@ -6,7 +6,7 @@ Hide non member chat in youtube streams.
 
 Pick a directory, any of them work
 
-`git clone https://github.com/KritantaDev/iPhoneDevWiki-Dark.git`
+`git clone https://github.com/KritantaDev/YTSaneChat.git`
 
 Open chrome, click the icon on the far top right, open extensions. 
 
