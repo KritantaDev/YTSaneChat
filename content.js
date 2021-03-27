@@ -11,3 +11,9 @@ sheet.insertRule("yt-live-chat-membership-item-renderer[show-only-header] {displ
 sheet.insertRule("yt-live-chat-paid-message-renderer {display: none !important;}");
 /* hide dono bar */
 sheet.insertRule("yt-live-chat-ticker-renderer {display: none !important;}");
+/* remove pfp */
+sheet.insertRule("yt-img-shadow {display: none !important;}");
+/* remove stickers */
+sheet.insertRule("yt-live-chat-paid-sticker-renderer {display: none !important;}");
+/* remove "welcome to live chat" */
+sheet.insertRule("yt-live-chat-viewer-engagement-message-renderer {display: none !important;}");

@@ -2,7 +2,7 @@
   "manifest_version": 3,
 
   "name": "YTSaneChat",
-  "version": "0.1.4",
+  "version": "0.1.5",
   "author": "arm64e",
   "description": "Sane Stream Chat",
   "web_accessible_resources": [
