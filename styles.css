@@ -1,6 +1,12 @@
+/* Hide everything in chat */
+yt-live-chat-text-message-renderer {
+    display: none!important;
+}
+/* Unhide member chat */
 yt-live-chat-text-message-renderer[author-type="member"] {
     display: inherit!important;
 }
-yt-live-chat-text-message-renderer {
+/* Hide new member messages */
+yt-live-chat-membership-item-renderer[show-only-header] {
     display: none!important;
 }
