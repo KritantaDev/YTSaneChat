@@ -34,6 +34,14 @@ const targetNode = document.getElementsByClassName('yt-live-chat-item-list-rende
 const newChatView = targetNode.cloneNode(true);
 newChatView.setAttribute("id", "ytsaneitems");
 document.getElementsByClassName('yt-live-chat-item-list-renderer')[0].children[0].querySelector('#item-offset').appendChild(newChatView);
+for (existingMessage in newChatView.childNodes)
+{
+    if (!newChatView.childNodes.hasOwnProperty(existingMessage))
+        continue;
+    console.log(existingMessage);
+    if (!shouldProcessMessage(existingMessage))
+    existingMessage.remove();
+}
 
 var memberMessages = []
 
@@ -48,8 +56,12 @@ function capitalized (str) {
 // Ignore messages from non channel members
 function shouldProcessMessage(message)
 {
-    if (message.getAttribute("author-type") != "")
+    try {
+        if (message.getAttribute("author-type") != "")
         return true;
+    } catch (error) {
+        
+    }
 
     return false;
 }
