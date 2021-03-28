@@ -2,6 +2,8 @@
 
 Quality filter for youtube streams.
 
+Written for Technoblade's livestreams.
+
 ### Things it does
 
 * Filters out non-member chat
